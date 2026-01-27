@@ -4,3 +4,6 @@ class Solution:
             return
         self.printNumbers(n-1)
         print(n)
+        
+s = Solution()
+s.printNumbers(5)
