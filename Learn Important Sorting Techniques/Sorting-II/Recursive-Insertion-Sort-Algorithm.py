@@ -4,7 +4,6 @@ class Solution:
             return j+1
         if nums[j]<temp:
             return j+1
-        # print(j)
         nums[j+1] = nums[j]
         return self.swap(nums, temp, j-1)
         
