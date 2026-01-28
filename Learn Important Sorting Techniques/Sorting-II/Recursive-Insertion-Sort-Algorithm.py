@@ -10,7 +10,7 @@ class Solution:
          
         
     def outter(self, nums, n):
-        if n == -1:
+        if n == 0:
             return
         self.outter(nums, n-1)
         key = nums[n]
@@ -19,8 +19,8 @@ class Solution:
         
     
     def insertionSort(self, nums):
-        self.outter(nums, len(nums)-2)
+        self.outter(nums, len(nums)-1)
         return nums
 
 s = Solution()
-print(s.insertionSort([7, 4, 1, 5, 3]))
+print(s.insertionSort([5, 4, 4, 1, 1]))
